@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-    public float duration = 100;
+    public float duration = 3;
 
     public float damageMod = 0.5f;
     
@@ -17,10 +17,24 @@ public class Shield : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Timer();
     }
 
-    public float ReduceDamage(float damage)
+    public virtual void Timer()
+    {
+        if (duration > 0)
+        {
+            duration -= Time.deltaTime;
+            
+        }
+        else
+        {
+            print("destroy shield");
+            Destroy(this);
+        }
+    }
+    
+    public virtual float ReduceDamage(float damage)
     {
         return damage = damageMod;
         
