@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Health : MonoBehaviour
 
     public GameObject test;
 
-   
+    public Text healthText;
     
     // Start is called before the first frame update
     void Start()
@@ -22,12 +23,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Damage(10);
-        }
+       // if (Input.GetMouseButtonDown(0))
+        //{
+            //Damage(10);
+       // }
 
-        
+        healthText.text = "Health " + health;
     }
 
     public void Damage(float damageAmount)
