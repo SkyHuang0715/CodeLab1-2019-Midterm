@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-    public float duration = 3;
+    public float duration = 10;
 
     public float damageMod = 0.5f;
     

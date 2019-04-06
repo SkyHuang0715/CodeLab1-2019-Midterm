@@ -22,13 +22,13 @@ public class EnemyFollow : MonoBehaviour
     
      public Health enemyDamage;
 
+
     // Start is called before the first frame update
     void Start()
     {
         gameOver = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        
-        
+
 
     }
 
@@ -48,6 +48,12 @@ public class EnemyFollow : MonoBehaviour
 	        enemyDamage.Damage(10);
 	        Destroy(gameObject);
 	        //GameOver();
+
+	        if (target.GetComponent<AttackShield>() != null)
+	        {
+		        Debug.Log("You attacked enemy!");
+		        GameManager.instance.Score++;
+	        }
 
         }
         
