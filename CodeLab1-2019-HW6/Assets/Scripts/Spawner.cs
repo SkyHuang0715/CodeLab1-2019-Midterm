@@ -10,8 +10,8 @@ public class Spawner : MonoBehaviour {
     void Start () {
         gameOver = false;
         //Spawn();
-        InvokeRepeating("SpawnWhite",1,0.5f);
-        InvokeRepeating("SpawnBlack",1,1);
+        InvokeRepeating("SpawnEnemy",1,2f);
+        InvokeRepeating("SpawnShield",3,2);
         //InvokeRepeating("Spawn",3,3);
     }
 	
@@ -26,10 +26,10 @@ public class Spawner : MonoBehaviour {
         }
     }
 
-    void SpawnWhite ()
+    void SpawnEnemy ()
     {
-        GameObject newPrize = Instantiate(Resources.Load<GameObject>("Prefab/Prize"));
-        newPrize.transform.position = new Vector2(Random.Range(-8,8), 8);
+        GameObject newEnemy = Instantiate(Resources.Load<GameObject>("Prefab/enemy"));
+        newEnemy.transform.position = new Vector2(Random.Range(-8,7), Random.Range(-8,9));
 
 
 
@@ -37,10 +37,10 @@ public class Spawner : MonoBehaviour {
 
     }
 
-    void SpawnBlack()
+    void SpawnShield()
     {
-        GameObject newBomb = Instantiate(Resources.Load<GameObject>("Prefab/Bomb"));
-        newBomb.transform.position = new Vector2(Random.Range(-8,8), 8);
+        GameObject newShield = Instantiate(Resources.Load<GameObject>("Prefab/Shield"));
+        newShield.transform.position = new Vector2(Random.Range(-8,7), Random.Range(-8,9));
     }
 	
 	

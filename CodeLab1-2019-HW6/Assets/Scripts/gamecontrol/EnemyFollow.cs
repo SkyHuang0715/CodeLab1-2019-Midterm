@@ -28,7 +28,7 @@ public class EnemyFollow : MonoBehaviour
     {
         gameOver = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
+        enemyDamage = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
 
     }
 
