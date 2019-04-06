@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="563c19c0-6988-49e3-bda9-ccd83be2edab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CodeLab1-2019-HW6/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/.idea/.idea.CodeLab1-2019-HW6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/.idea/.idea.CodeLab1-2019-HW6/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/level0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CodeLab1-2019-HW6/Assets/level0.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="336" />
     <option name="y" value="85" />
     <option name="width" value="1440" />
@@ -123,7 +116,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="336" y="85" width="1440" height="772" extended-state="1" />
+    <frame x="336" y="85" width="1440" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2536232" />

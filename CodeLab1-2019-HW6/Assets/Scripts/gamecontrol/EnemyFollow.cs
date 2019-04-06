@@ -20,13 +20,15 @@ public class EnemyFollow : MonoBehaviour
     public bool gameOver;
     public Button Restart;
     
+     public Health enemyDamage;
 
     // Start is called before the first frame update
     void Start()
     {
         gameOver = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
+        
+        
 
     }
 
@@ -43,8 +45,10 @@ public class EnemyFollow : MonoBehaviour
 
         if (Vector2.Distance(transform.position, target.position) <= 1)
         {
-            GameOver();
-          
+	        enemyDamage.Damage(10);
+	        Destroy(gameObject);
+	        //GameOver();
+
         }
         
              

@@ -7,6 +7,8 @@ public class Health : MonoBehaviour
     public float health = 100f;
 
     public GameObject test;
+
+   
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,7 @@ public class Health : MonoBehaviour
         
     }
 
-    void Damage(float damageAmount)
+    public void Damage(float damageAmount)
     {
         Shield armor = GetComponent<Shield>();
 
