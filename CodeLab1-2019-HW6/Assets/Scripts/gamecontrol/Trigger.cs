@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
+
+	public GameObject myplayer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        myplayer = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -24,7 +26,8 @@ public class Trigger : MonoBehaviour
     			//print("I GOT HIT");
     			if (other.gameObject.CompareTag("Player"))//if the collider attached the prize
     			{
-	                other.gameObject.GetComponent<PlayerController>().score+= 10; //Get the PlayerController and add 10 score
+	                myplayer.AddComponent<SuperShield>();
+	                //other.gameObject.GetComponent<PlayerController>().score+= 10; //Get the PlayerController and add 10 score
     				Destroy(gameObject); //Destroy the gameObject I am attached to
     			}
     		}

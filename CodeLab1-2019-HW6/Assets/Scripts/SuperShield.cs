@@ -18,7 +18,7 @@ public class SuperShield : Shield
     void Update()
     {
         Timer();
-        print("I'm superShield's update");
+        //print("I'm superShield's update");
     }
 
     public override void Timer()
@@ -26,12 +26,12 @@ public class SuperShield : Shield
         if (superDuration > 0)
         {
             superDuration -= Time.deltaTime;
-            print("using super duration");
+            //print("using super duration");
         }
         else
         {
             base.Timer();
-            print("using base timer");
+            //print("using base timer");
         }
     }
 
