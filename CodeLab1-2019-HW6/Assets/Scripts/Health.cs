@@ -22,6 +22,12 @@ public class Health : MonoBehaviour
     {
       
         healthText.text = "Health " + health;
+        
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+            print("GAME OVER");
+        }
     }
 
     public void Damage(float damageAmount)

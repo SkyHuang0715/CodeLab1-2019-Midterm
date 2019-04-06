@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43085577eff1e894bbc39f157fed1f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   gameOver: 0
   Restart: {fileID: 0}
   enemyDamage: {fileID: 0}
