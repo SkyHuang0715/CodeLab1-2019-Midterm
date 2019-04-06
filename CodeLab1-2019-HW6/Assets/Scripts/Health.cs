@@ -23,11 +23,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // if (Input.GetMouseButtonDown(0))
-        //{
-            //Damage(10);
-       // }
-
+      
         healthText.text = "Health " + health;
     }
 
