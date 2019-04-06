@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
 
     public Text healthText;
     
+     public bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,12 @@ public class Health : MonoBehaviour
         {
             Destroy(gameObject);
             print("GAME OVER");
+            Time.timeScale = 0;
+            gameOver = true;
+        }
+        else
+        {
+            Time.timeScale = 1; 
         }
     }
 

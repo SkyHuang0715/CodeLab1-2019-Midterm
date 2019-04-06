@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 459646520}
   - component: {fileID: 459646522}
   - component: {fileID: 459646521}
+  - component: {fileID: 459646523}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -582,7 +583,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -594,6 +595,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459646519}
   m_CullTransparentMesh: 0
+--- !u!114 &459646523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459646519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5570ac2c2934c4f4bbea455f51405f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 10
+  timer: 0
+  damageMod: 0.5
+  image: {fileID: 459646521}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,7 +1662,7 @@ PrefabInstance:
     - target: {fileID: 3206458508508908175, guid: e5804885badef5a4db48f2a6c75b1c41,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3206458508508908175, guid: e5804885badef5a4db48f2a6c75b1c41,
         type: 3}
@@ -1798,7 +1815,7 @@ PrefabInstance:
     - target: {fileID: 6958125794938554758, guid: 9f912e80b83ba164abf1a4b9220d67c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6958125794938554758, guid: 9f912e80b83ba164abf1a4b9220d67c7,
         type: 3}

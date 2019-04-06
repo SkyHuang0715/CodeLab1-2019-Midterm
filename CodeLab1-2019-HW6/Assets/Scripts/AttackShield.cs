@@ -14,6 +14,7 @@ public class AttackShield : Shield
     void Update()
     {
         Timer();
+        
     }
     
      public override float ReduceDamage(float damage)

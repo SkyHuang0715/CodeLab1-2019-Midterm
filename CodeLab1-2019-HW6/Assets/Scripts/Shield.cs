@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Shield : MonoBehaviour
 {
     public float duration = 10;
+    
+    
 
     public float damageMod = 0.5f;
+    
+ 
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +24,7 @@ public class Shield : MonoBehaviour
     void Update()
     {
         Timer();
+       
     }
 
     public virtual void Timer()

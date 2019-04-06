@@ -21,9 +21,12 @@ public class Spawner : MonoBehaviour {
 	
         if (!gameOver)
         {
-            //Spawn();
-			
-			
+            
+
+        }
+        else
+        {
+            
         }
     }
 
