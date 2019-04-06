@@ -5,11 +5,16 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     public float health = 100f;
+
+    public GameObject test;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (health <= 110 )
+                {
+                     test.AddComponent<Shield>();
+                }
     }
 
     // Update is called once per frame
@@ -19,6 +24,8 @@ public class Health : MonoBehaviour
         {
             Damage(10);
         }
+
+        
     }
 
     void Damage(float damageAmount)
