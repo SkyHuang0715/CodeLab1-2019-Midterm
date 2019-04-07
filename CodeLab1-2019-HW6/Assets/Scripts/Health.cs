@@ -33,7 +33,8 @@ public class Health : MonoBehaviour
         }
         else
         {
-            Time.timeScale = 1; 
+            Time.timeScale = 1;
+            gameOver = false;
         }
     }
 

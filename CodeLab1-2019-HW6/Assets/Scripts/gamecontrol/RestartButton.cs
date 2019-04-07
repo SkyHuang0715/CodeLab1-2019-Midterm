@@ -10,7 +10,7 @@ public class RestartButton : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		enemy1 = GameObject.Find("enemy");
+		enemy1 = GameObject.Find("GameManager");
 		button = GameObject.Find("Restart");
 	}
 	

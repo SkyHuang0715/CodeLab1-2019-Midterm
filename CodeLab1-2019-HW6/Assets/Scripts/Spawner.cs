@@ -5,28 +5,30 @@ using UnityEngine.Analytics;
 
 public class Spawner : MonoBehaviour {
 
-    private bool gameOver;
+    public Health gameOverhealth;
     // Use this for initialization
     void Start () {
-        gameOver = false;
+        
+        gameOverhealth = GameObject.FindObjectOfType<Health>();
         //Spawn();
-        InvokeRepeating("SpawnEnemy",1,2f);
+        InvokeRepeating("SpawnEnemy",1,0.5f);
         InvokeRepeating("SpawnShield",3,30f);
         InvokeRepeating("SpawnAttack",10,15f);
         InvokeRepeating("SpawnAbsorb",20,60f);
     }
 	
     // Update is called once per frame
-    void Update () {
-	
-        if (!gameOver)
+    void Update ()
+    {
+
+        if (gameOverhealth.gameOver) 
         {
-            
+            CancelInvoke("SpawnEnemy");
 
         }
         else
         {
-            
+             
         }
     }
 

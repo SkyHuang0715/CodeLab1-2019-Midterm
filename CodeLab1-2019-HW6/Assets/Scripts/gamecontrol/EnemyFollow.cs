@@ -29,6 +29,8 @@ public class EnemyFollow : MonoBehaviour
         gameOver = false;
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         enemyDamage = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+        
+        
 
     }
 
@@ -36,28 +38,36 @@ public class EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+	    if (enemyDamage.health > 0)
+	    {
+		    gameOver = false;
 
-        if(Vector2.Distance(transform.position, target.position) > 1){
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-            //make enemy from one position towards another position(from, to, speed)
-            Time.timeScale = 1;
-        }
+		    if (Vector2.Distance(transform.position, target.position) > 1)
+		    {
+			    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+			    //make enemy from one position towards another position(from, to, speed)
+			    Time.timeScale = 1;
+		    }
 
-        if (Vector2.Distance(transform.position, target.position) <= 1)
-        {
-	        enemyDamage.Damage(10);
-	        Destroy(gameObject);
-	        //GameOver();
+		    if (Vector2.Distance(transform.position, target.position) <= 1)
+		    {
+			    enemyDamage.Damage(10);
+			    Destroy(gameObject);
+			    
 
-	        if (target.GetComponent<AttackShield>() != null)
-	        {
-		        Debug.Log("You attacked enemy!");
-		        GameManager.instance.Score++;
-	        }
+			    if (target.GetComponent<AttackShield>() != null)
+			    {
+				    Debug.Log("You attacked enemy!");
+				    GameManager.instance.Score++;
+			    }
 
-        }
-        
-             
+		    }
+
+	    }
+	    else
+	    {
+		    GameOver();
+	    }
     }
     
     public void Resetbtn()
@@ -69,7 +79,7 @@ public class EnemyFollow : MonoBehaviour
     			Restart.interactable = !Restart.interactable;
     		}
 
-    		SceneManager.LoadScene(1);  
+    		SceneManager.LoadScene(0);  
     		Time.timeScale = 1;
             gameOver = false;
 
